@@ -1,23 +1,25 @@
-import "./App.css";
+import React from "react";
 import Weather from "./Weather";
-import "bootstrap/dist/css/bootstrap.css";
-export default function App() {
+import "./App.css";
+
+function App() {
   return (
     <div className="App">
-      <div className="container"></div>
-      <Weather />
-      <footer>
-        <p>
-          This project was coded by Daphne Bonilla{" "}
+      <div className="container">
+        <Weather defaultCity="Seattle" />
+        <footer>
+          This project was coded by Daphne Bonilla and is{" "}
           <a
             href="https://github.com/Daphne271991/weather-react"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
-            open-sourced
+            open-sourced on GitHub
           </a>
-        </p>
-      </footer>
+        </footer>
+      </div>
     </div>
   );
 }
+
+export default App;
