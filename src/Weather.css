@@ -1,22 +1,21 @@
 .Weather {
-  border: 1px solid rgb(49, 49, 81);
-  font-family: "Vollkorn", serif;
-  color: rgb(41, 41, 71);
+  border: 1px solid #164b60;
+  color: #164b60;
   padding: 16px;
-  margin: 30px auto;
-  max-width: 600px;
-  border-radius: 3px;
+  border-radius: 8px;
+  background: radial-gradient(
+    circle at 18.7% 37.8%,
+    rgb(250, 250, 250) 0%,
+    rgb(225, 234, 238) 90%
+  );
 }
 
-.Weather form {
-  margin-bottom: 20px;
-}
-
-.Weather h2 {
+.Weather h1 {
   font-size: 24px;
   font-weight: 100;
-  line-height: 26px;
+  line-height: 29px;
   margin: 20px 0 0 0;
+  color: #0e5279;
 }
 
 .Weather ul {
@@ -27,26 +26,40 @@
 .Weather li {
   font-size: 16px;
   font-weight: 100;
-  line-height: 18px;
+  line-height: 19px;
   list-style: none;
 }
+
 .Weather canvas {
-  margin-right: 5px;
+  margin-right: 10px;
   margin-top: 5px;
   display: inline-block;
 }
-.Weather .unit {
-  font-size: 16px;
-  font-weight: 400;
-  color: rgb(49, 49, 81);
-  position: relative;
-
-  line-height: 1;
-}
 
 .Weather .temperature {
+  font-weight: bold;
+  color: #1b6593;
+  font-size: 64px;
   font-weight: 400;
-  color: rgb(41, 41, 71);
-  font-size: 50px;
   line-height: 64px;
+}
+
+.Weather .unit {
+  color: rgb(33, 33, 33);
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  top: -32px;
+}
+
+.btn-primary {
+  background-color: #8cc0de;
+  border-color: #8cc0de;
+  color: #1b6b93;
+}
+
+.btn-primary:hover {
+  background-color: #164b60;
+  border-color: #164b60;
+  color: #8cc0de;
 }
